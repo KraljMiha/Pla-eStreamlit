@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.image("slike/Regije_Slovenija.png", width=600)  # ali path do tvoje slike
+st.image("Regije_Slovenija.png", width=600)  # ali path do tvoje slike
 
 st.markdown("<h1 style='color:#4db8ff;'>📊 Interaktivna analiza plač v Sloveniji</h1>", unsafe_allow_html=True)
 st.markdown("""
