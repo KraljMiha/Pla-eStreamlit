@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
-csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../placa_utf8.csv"))
+csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../placa_utf8.csv"))
 df = pd.read_csv(csv_path)
 df["DATA"] = pd.to_numeric(df["DATA"], errors="coerce")
 
