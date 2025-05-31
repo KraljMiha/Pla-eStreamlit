@@ -6,7 +6,7 @@ import plotly.express as px
 st.set_page_config(page_title="Plače po starostnih skupinah", layout="wide")
 st.markdown("<h1 style='color: #3366cc;'>👥 Povprečne bruto plače po starostnih skupinah in regijah</h1>", unsafe_allow_html=True)
 
-base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../placa_utf8.csv"))
+base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../placa_utf8.csv"))
 df = pd.read_csv(base_path)
 df["DATA"] = pd.to_numeric(df["DATA"], errors="coerce")
 
