@@ -7,7 +7,7 @@ import os
 st.set_page_config(page_title="Spolne razlike po regijah", layout="wide")
 st.markdown("<h1 style='color: salmon;'>♀️♂️ Spolne razlike po regijah</h1>", unsafe_allow_html=True)
 
-base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../placa_utf8.csv"))
+base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../placa_utf8.csv"))
 df = pd.read_csv(base_path)
 df["DATA"] = pd.to_numeric(df["DATA"], errors="coerce")
 
